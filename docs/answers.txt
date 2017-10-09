@@ -1,0 +1,43 @@
+a)
+
+Bryans-MacBook-Pro:Assignment1 bryanpozzuoli$ git add -p
+diff --git a/docs/status.txt b/docs/status.txt
+index 8b13789..2b8cbcc 100644
+--- a/docs/status.txt
++++ b/docs/status.txt
+@@ -1 +1,5 @@
++On branch master
++Your branch is up-to-date with 'origin/master'.
++
++nothing to commit, working tree clean
+ 
+Stage this hunk [y,n,q,a,d,/,e,?]? y
+
+Bryans-MacBook-Pro:Assignment1 bryanpozzuoli$ git commit -m "Second Commit"
+[master 87869e7] Second Commit
+ 1 file changed, 4 insertions(+)
+
+b)
+
+git shortlog -s
+     3  Bryan Pozzuoli
+     1  Javier Ricardo Escobar Avila
+     5  irlabuser
+c)
+
+git log .gitignore
+commit a46d9263dfca5ecc9a803da298fcb3b2e229131f
+Author: irlabuser <irlabuser@irlabvm>
+Date:   Wed Sep 27 16:31:42 2017 -0500
+
+    Second version of the RoleGame prototype
+    
+    A new weapon was added (CommonSpear)
+    
+    Comments are finally real
+
+
+d)
+
+
+
