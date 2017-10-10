@@ -1,5 +1,8 @@
 #include <string>
 #include "Weapon.h"
+#include <cstdlib>
+#include <iostream>
+#include <ctime>
 
 #ifndef WHIP_H
 #define WHIP_H
@@ -10,11 +13,15 @@
  */
 class Whip : public Weapon {
 public:
-
-    Whip() : Weapon("Whip", 40.0) {
+    Whip() : Weapon("Whip", RandomDmg()) {
     }
     virtual ~Whip() {}; 
     virtual double hit(double armor);
+    double RandomDmg(){
+    	srand(time(NULL));
+    	hitPoints = rand() % 45;
+    	return hitPoints;
+    }
 
 };
 

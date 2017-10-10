@@ -1,0 +1,77 @@
+a)
+
+Bryans-MacBook-Pro:Assignment1 bryanpozzuoli$ git add -p
+diff --git a/docs/status.txt b/docs/status.txt
+index 8b13789..2b8cbcc 100644
+--- a/docs/status.txt
++++ b/docs/status.txt
+@@ -1 +1,5 @@
++On branch master
++Your branch is up-to-date with 'origin/master'.
++
++nothing to commit, working tree clean
+ 
+Stage this hunk [y,n,q,a,d,/,e,?]? y
+
+Bryans-MacBook-Pro:Assignment1 bryanpozzuoli$ git commit -m "Second Commit"
+[master 87869e7] Second Commit
+ 1 file changed, 4 insertions(+)
+
+b)
+
+git shortlog -s
+     3  Bryan Pozzuoli
+     1  Javier Ricardo Escobar Avila
+     5  irlabuser
+c)
+
+git log .gitignore
+commit a46d9263dfca5ecc9a803da298fcb3b2e229131f
+Author: irlabuser <irlabuser@irlabvm>
+Date:   Wed Sep 27 16:31:42 2017 -0500
+
+    Second version of the RoleGame prototype
+    
+    A new weapon was added (CommonSpear)
+    
+    Comments are finally real
+
+
+d)
+
+2 parents e7831f6 + a46d926 commit cb30d72a3d94c108f393c163a35c1cc9bf18ffca
+
+e)
+
+Branches help separate different projects so that it is easy to push out only finished projects. Branches also tend to be easier than cloned directories for pulling in changes and for sharing changes across multiple projects.
+
+f)
+
+git log: The command takes options applicable to the git rev-list command to control what is shown and how, and options applicable to the git diff-* commands to control how the changes each commit introduces are shown.
+
+git status: Displays paths that have differences between the index file and the current HEAD commit, paths that have differences between the working tree and the index file, and paths in the working tree that are not tracked by Git
+
+g)
+
+git log --follow Weapon.h
+
+h)
+
+git log --grep=file
+
+i)
+
+inheritance: a process of creating new classes from existing classes
+
+polymorphism: the ability to present the same interface for differing underlying forms
+
+encapsulation: a language mechanism for restricting direct access to some of the object's components or a language construct that facilitates the bundling of data with the methods (or other functions) operating on that data.
+
+7)
+
+It is using both inheritance and polymorphism.
+Each individual weapon is inheriting from the main weapon class.
+Each weapon is being displayed the same way despite being different weapons which is polymorphism.
+
+
+

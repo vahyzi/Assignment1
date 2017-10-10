@@ -2,11 +2,14 @@
 #include <cstdlib>
 
 double Whip::hit(double armor) {
-	hitPoints = rand() % 30;
-	if((int)hitPoints % 10 == 0){		// If hit by a multiple of ten it ignores armor
+	if((int)hitPoints % 5 == 0){		// If hit by a multiple of 5 it ignores armor
 		return hitPoints;
 	}
-	else
-		return hitPoints - armor;
+
+	if( hitPoints - armor < 0){
+		return 0;
+	}
+
+	return hitPoints - armor;
 
 }
