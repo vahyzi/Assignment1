@@ -67,3 +67,14 @@ polymorphism: the ability to present the same interface for differing underlying
 
 encapsulation: a language mechanism for restricting direct access to some of the object's components or a language construct that facilitates the bundling of data with the methods (or other functions) operating on that data.
 
+<<<<<<< HEAD
+=======
+7)
+
+It is using both inheritance and polymorphism.
+Each individual weapon is inheriting from the main weapon class.
+Each weapon is being displayed the same way despite being different weapons which is polymorphism.
+
+
+
+>>>>>>> development
